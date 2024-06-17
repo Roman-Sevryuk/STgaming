@@ -1,0 +1,812 @@
+@font-face {
+  font-family: "Racing";
+  src: url("fonts/racing-done-pro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Racing-second";
+  src: url("fonts/league-spartan-7.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+html.catalog {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+section.nav {
+  background: #4e4e50;
+  background: linear-gradient(to top, #1a1a1d, #4e4e50);
+  padding: 20px;
+  margin-top: 0;
+  height: 25vh;
+}
+
+section.info {
+  background-color: #4e4e50;
+}
+
+section.info-revers {
+  background-color: #ffffff;
+}
+
+section.footer {
+  height: 25vh;
+  scroll-snap-align: start;
+}
+
+head {
+  background-color: #c3073f;
+}
+
+h1.main-right {
+  padding-left: 64px;
+  color: black;
+}
+
+h1.main-left {
+  padding-right: 64px;
+  text-align: end;
+  color: black;
+}
+
+h1.main {
+  margin: 12px;
+  margin-right: 50px;
+  background: #1a1a1d;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  font-family: "Racing", serif;
+  margin-left: -7px;
+  width: 567px;
+  padding-top: 1.25%;
+  font-size: 45px;
+}
+
+h1.body {
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #c3073f;
+  border-radius: 16px;
+  margin-top: 16px;
+  width: 400px;
+}
+
+h1.news {
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #c3073f;
+  border-radius: 16px;
+  margin-top: 16px;
+  width: 30%;
+  margin-bottom: 16px;
+  margin-left: 35%;
+}
+h2{
+  font-family: "Racing";
+}
+h3 {
+  text-align: center;
+  margin-top: 16px;
+  background: #c3073f;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 0px 10px #1a1a1d;
+}
+
+h3.left-menu {
+  text-align: center;
+  margin-top: 16px;
+  width: 60%;
+  margin-left: 35%;
+  background: #c3073f;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 0px 10px #1a1a1d;
+}
+
+h3.catalog {
+  text-align: center;
+  margin-top: 16px;
+  margin-right: 90px;
+  margin-left: 90px;
+  background: #c3073f;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 0px 10px #1a1a1d;
+}
+
+h4 {
+  text-align: left;
+  margin-top: 26px;
+  background: #1a1a1d;
+  width: 120px;
+  color: #c3073f;
+  padding: 8px;
+  border-radius: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 0px 15px #c3073f;
+}
+
+h4.eneter {
+  text-align: center;
+}
+
+p.main-left {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Palatino Linotype;
+  color: #ffffff9a;
+  display: flex;
+
+  text-align: end;
+  justify-content: center;
+  align-items: center;
+  margin-right: 48px;
+}
+
+p.main-left1 {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Palatino Linotype;
+  color: #ffffff9a;
+  display: flex;
+
+  text-align: end;
+  justify-content: center;
+  align-items: center;
+  margin-right: 48px;
+}
+
+p.main-right {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Palatino Linotype;
+  color: #ffffff9a;
+  display: flex;
+
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 48px;
+}
+
+p.card {
+  text-align: center;
+  font-size: 18px;
+  padding: 8px;
+  color: #ffffff;
+  background-color: #4e4e50;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 40%;
+  border-radius: 16px;
+  margin-left: 30%;
+}
+
+p.log {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p.news {
+  margin-left: 5%;
+  font-size: 25px;
+  color: #ffffff9a;
+  height: 60vh;
+  line-height: 48px;
+  font-family: Palatino Linotype;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+
+div.scale {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 80%;
+  max-width: 100%;
+  box-shadow: 0px 0px 15px #1a1a1d;
+}
+
+div.scale img {
+  transition: 1s;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+}
+
+div.scale img:hover {
+  transform: scale(1.1);
+}
+
+div.line {
+  border-bottom: 5px solid #c3073f;
+  margin-left: 48px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+div.line-left {
+  border-bottom: 5px solid #c3073f;
+  margin-right: 48px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+div.vitrina {
+  text-align: -webkit-center;
+}
+
+div.bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.bloc-1 {
+  padding: 16px;
+  width: 50%;
+}
+
+div.titles {
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 16px;
+}
+
+div.h3 {
+  position: fixed;
+  background-color: #1a1a1d;
+  padding-right: 64px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #1a1a1d;
+  margin-top: 32px;
+}
+
+div.top {
+  background: #4e4e50;
+  background: linear-gradient(to top, #1a1a1d, #4e4e50);
+  padding: 20px;
+  margin: 0;
+}
+
+div.top-catalog {
+  background: #4e4e50;
+  background: linear-gradient(to top, #1a1a1d, #4e4e50);
+  padding: 20px;
+  margin: 0;
+}
+
+div.back {
+  padding: 0px;
+  background-color: #4e4e50;
+  background: linear-gradient(to bottom, #1a1a1d, #4e4e50) fixed;
+  background-repeat: no-repeat;
+  margin-top: -16px;
+  background-size: cover;
+}
+
+div.back-news {
+  margin-top: -16px;
+  background-color: #4e4e50;
+  background: linear-gradient(to bottom, #1a1a1d, #4e4e50) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.categorii {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+div.catalog-left {
+  width: 25%;
+  max-width: 250px;
+  background-color: #4e4e50;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 200px;
+  background: linear-gradient(to top right, #4e4e50, #1a1a1d);
+}
+
+div.catalog-right {
+  width: 75%;
+  background-color: #4e4e50;
+  height: 100%;
+  background: linear-gradient(to top left, #4e4e50, #1a1a1d);
+  width: 100%;
+}
+
+div.cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 32px;
+}
+
+div.card {
+  background-color: #1a1a1d;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 0 15px #c3073f;
+  width: 33%;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+div.button {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+div.login {
+  background-color: #c3073f;
+  text-align: center;
+  margin-top: 10%;
+  padding: 18px;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 12px;
+  height: 45%;
+  width: 20%;
+  color: #ffffff;
+}
+
+div.log {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.enter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.log-reg {
+  padding: 24px;
+}
+
+div.checkbox {
+  margin-top: 16px;
+}
+
+div.gallery {
+  display: flex;
+  gap: 4px;
+  width: 90%;
+  height: 35%;
+  margin-left: 5%;
+  padding-top: 15%;
+  overflow: hidden;
+}
+
+div.object {
+  position: relative;
+  left: 0px;
+  width: 120px;
+  border-radius: 4px;
+  padding: 8px;
+  height: 240px;
+  background-color: #4e4e50;
+  transition: 0.4s ease-in-out;
+  flex: 1px;
+}
+
+div.object:hover {
+  flex: 3; 
+  font-weight: bold;
+  height: 320px;
+  cursor: grab;
+}
+
+div.object:nth-child(1) {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://racebar.org/forum/attachments/top_image_reflect_1_1280x1280-jpg.70/);
+}
+
+div.object:nth-child(2) {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://fanatec.su/assets/images/shop/82/product_page_top_banner_cs_sw_f1_esp_v2_1280x1280.jpg);
+}
+
+div.object:nth-child(3) {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://fanatec.su/assets/images/shop-new/38/1.jpg);
+}
+
+div.object:nth-child(4) {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://fanatec.su/assets/images/shop-new/42/5.jpg);
+}
+
+div.object:nth-child(5) {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://simracereviews.com/wp-content/uploads/2020/06/RennSport-Cockpit-1.jpg);
+}
+
+button.standart {
+  border: none;
+  background-color: #1a1a1d;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  height: 60px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s linear;
+}
+
+button.standart:hover {
+  background-color: #c3073f;
+  box-shadow: 0px 0px 20px #c3073f;
+}
+
+button.forgot:hover {
+  background-color: #c3073f;
+  box-shadow: 0px 0px 20px #c3073f;
+}
+
+button.main {
+  background-color: #c3073f;
+  box-shadow: 0px 0px 20px #c3073f;
+  border: none;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  height: 60px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s linear;
+}
+
+button.catalog {
+  background-color: #c3073f;
+  box-shadow: 0px 0px 20px #c3073f;
+  margin-top: -12px;
+  border: none;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  height: 60px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s linear;
+}
+
+button.forgot {
+  border: none;
+  font-family: Arial;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  height: 80px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1a1a1d;
+}
+
+button.news {
+  background-color: #c3073f;
+  border: none;
+  font-family: Arial;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  height: 60px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0px 0px 20px #c3073f;
+}
+
+button.part {
+  background-color: #c3073f;
+  box-shadow: 0px 0px 20px #c3073f;
+  border: none;
+  font-family: Arial;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  height: 60px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button.catalog-button {
+  text-align: left;
+  margin-top: 26px;
+  background: #1a1a1d;
+  width: 120px;
+  color: #c3073f;
+  /* padding: 8px; */
+  border-radius: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 0px 15px #c3073f;
+}
+
+
+button.catalog-main {
+  background-color: #1a1a1d;
+  margin-top: -12px;
+  border: none;
+  font-family: Arial;
+  padding: 16px;
+  padding-top: 14px;
+  border-radius: 16px;
+  font-size: 24px;
+  margin: 4px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button.enter {
+  width: 45%;
+  height: 75px;
+  margin-left: 0px;
+  margin-top: 12px;
+}
+
+button.back {
+  border: none;
+  background-color: #1a1a1d;
+  font-family: Arial;
+  border-radius: 16px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button.img {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border-style: none;
+  cursor: grab;
+}
+
+marquee {
+  background: #1a1a1d;
+  font-family: Time new Roman;
+  color: #ffffff;
+  padding: 12px;
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+
+img.wheel {
+  width: 50%;
+  border-radius: 16px;
+  margin-top: 32px;
+  animation-duration: 3s;
+}
+
+img.pedals {
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  border: 3px solid #c3073f;
+  border-radius: 16px;
+  box-shadow: #c3073f 0 0 15px;
+}
+
+footer {
+  background: #4e4e50;
+  margin: 0px;
+}
+
+footer.catalog {
+  background: #4e4e50;
+  margin-top: 64px;
+}
+
+input.main {
+  background-color: #c3073f;
+  border: black;
+  border-radius: 16px;
+  margin: 12px;
+  padding: 8px 40px;
+  padding-top: 16px;
+}
+
+input.log {
+  background-color: #1a1a1d;
+  border: black;
+  border-radius: 16px;
+  padding: 8px 30px;
+  width: 100%;
+  padding-top: 16px;
+  margin-top: 12px;
+}
+
+input.log-main {
+  background-color: #1a1a1d;
+  border: black;
+  border-radius: 16px;
+  padding: 8px 30px;
+  width: 60%;
+  padding-top: 16px;
+  margin-top: 12px;
+}
+
+input:focus {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 25px;
+}
+
+ul.footer {
+  list-style-type: none;
+}
+
+td.footer {
+  width: 20%;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav {
+  display: table;
+}
+
+iframe.maps {
+  margin-top: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 15px #1a1a1d;
+}
+
+.topmenu>li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+div.anim-object {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  section.nav {
+    height: 30%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  p.card {
+    font-size: clamp(0.5rem, 1.25vw, 1rem);
+  }
+}
+
+@media all and (max-width: 900px) {
+  p.main-left1 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 23px;
+  }
+
+  p.main-left {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 23px;
+  }
+
+  p.main-right {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 23px;
+  }
+
+  p.news {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 23px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  h3.catalog {
+    width: 67.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  div.cards {
+    flex-direction: column;
+    margin-top: -32px;
+  }
+
+  div.card {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  p.main-left1 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 19px;
+  }
+
+  p.main-left {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 19px;
+  }
+
+  p.main-right {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 19px;
+  }
+}
+
